@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width,initial-scale=1">
+			<title>SystemZero</title>
+			<meta name="author" content="Timofey Cvektov">
+			<meta name="description" content="SystemZero">
+			<meta name="keywords" content="SystemZero">
+
+			<link rel="stylesheet" href="./style.css">
+			<link rel="icon" type="image/x-icon" href="./images/hexeditor.gif">
+	</head>
+	<body>
+		<div id="container">
+			<h2 style="text-align: center">SystemZero</h2>
+
+			<hr>
+
+			<h3>About This Project</h3>
+	
+			<p>SystemZero is a 32-bit computer operating system for the x86 CPU architecture, implemented in the C Programming Language, without the use of any external dependencies (apart from the BIOS firmware). The bootloader, kernel and all system utilities thus far have been written exclusively by me.</p>
+			<p>
+			A basic overview of the features of SystemZero includes:
+			<ul>
+				<li>A multi-drive bootloader.</li>
+				<li>A scrolling text console driver.</li>
+				<li>Support for PS/2 keyboards.</li>
+				<li>Support for up to 4 IDE hard drives at once.</li>
+				<li>A read and write filesystem.</li>
+				<li>Fully featured set of utilities for interfacing with the filesystem.</li>
+				<li>Editors for hex code and ASCII text.</li>
+				<li>A basic scripting language interpreter.</li>
+				<li>Ability to switch terminal colour schemes.</li>
+			</ul>
+			</p>
+			<p>Below is an image of the initial bootup of SystemZero, running inside a virtual machine.</p>
+
+			<center><a href="./images/systemzero.png"><img src="./images/systemzero.png" alt="SystemZero boot screen"></a></center>
+
+			<p>The interpreter for SystemZero is called <em>chain</em> and it implements logic based on the return status of the previous command that was ran.</p>
+			<p>The following chain of commands is able to determine whether a disk is formatted with a filesystem or not, and peform the according sequence of actions. If a disk is formatted, it outputs a string of text and exits. If a disk is not formatted, it outputs a string of text and formats the disk:</p>
+
+			<center><a href="./images/systemzero_chain.png"><img src="./images/systemzero_chain.png" alt="SystemZero chain interpreter"></a></center>
+
+			<p>SystemZero also has editors for text and hex code, as well as a pager program which allows for the viewing of long files.</p>
+			<p>Below are images of the hex editor and pager, the same file is open in both.</p>
+
+			<center><a href="./images/systemzero_hexedit.png"><img src="./images/systemzero_hexedit.png" alt="SystemZero hex editor"></a></center>
+			<center><a href="./images/systemzero_pager.png"><img style="margin-top: 15px" src="./images/systemzero_pager.png" alt="SystemZero pager"></a></center>
+
+			<p>GitHub repository: <a href="https://github.com/z3r0flag/SystemZero">https://github.com/z3r0flag/SystemZero.git</a></p>
+			<p>My self-hosted Git repository: <a href="https://git.cvetkov.me/SystemZero">https://git.cvetkov.me/TimCve/SystemZero</a></p>	
+			<p>The official documentation website for SystemZero: <a href="https://z3r0flag.github.io/SysZero">https://z3r0flag.github.io/SysZero</a></p>
+
+			<hr>
+
+			<a href="./index.html"><< Return to index</a>
+		</div>
+	</body>
+</html>
