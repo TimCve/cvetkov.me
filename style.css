@@ -24,8 +24,8 @@ img {
 }
 
 body {
-	display: flex;
-	justify-content: center;
+	margin: auto;
+	width: 1024px;
 	font-family: sans-serif;
 	background-color: #111;
 }
